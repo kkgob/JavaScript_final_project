@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TravelBloom - Search Results</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, #1c1f1f, #2c3e50);
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.7em;
+            font-family: 'Georgia', serif;
+            color: #eee;
+            margin-right: 50px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #eee;
+            margin: 0 20px;
+            font-weight: 500;
+            font-size: 1em;
+        }
+
+        .nav-links a:hover {
+            color: #bcd0ce;
+        }
+
+        .nav-links {
+            flex: 1;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 50px;
+            padding: 5px 10px;
+        }
+
+        .search-container input[type="text"] {
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            padding: 8px 10px;
+            font-size: 14px;
+            color: #333;
+            width: 240px;
+        }
+
+        .search-container input::placeholder {
+            color: #999;
+        }
+
+        .search-container button {
+            border: none;
+            background: #4cb5ae;
+            color: #fff;
+            padding: 6px 12px;
+            margin-left: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .search-container button.clear-btn {
+            background: #2f4f4f;
+            margin-left: 5px;
+        }
+
+        .search-container button:hover {
+            opacity: 0.9;
+        }
+
+        .search-icon {
+            margin-right: 10px;
+            color: #333;
+            font-size: 16px;
+        }
+
+        /* Results Section */
+        .results-container {
+            padding: 40px 80px;
+            background: rgba(255, 255, 255, 0.8); /* A white overlay for readability */
+        }
+
+        .results-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .recommendation {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            overflow: hidden;
+            background: #f9f9f9;
+        }
+
+        .recommendation img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .recommendation-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .recommendation-info h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .recommendation-info p {
+            margin: 0;
+        }
+
+        .no-results {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .visit-button {
+            background: #4cb5ae;
+            color: #fff;
+            border: none;
+            width: 100px;    /* Fixed width */
+            height: 40px;    /* Fixed height */
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            /* Remove or adjust padding if you want text perfectly centered */
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .visit-button:hover {
+            background: #3a928a;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="logo">TravelBloom</div>
+    <div class="nav-links">
+        <a href="travel_recommendation.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <!-- This search form is the same as on other pages; user enters keyword here -->
+    <form class="search-container" action="search.html" method="get">
+        <span class="search-icon">🔍</span>
+        <input type="text" name="q" placeholder="Enter a destination or keyword" />
+        <button type="submit">Search</button>
+        <button type="reset" class="clear-btn">Clear</button>
+    </form>
+</nav>
+
+<div class="results-container">
+    <h2>Search Results</h2>
+    <div id="results"></div>
+</div>
+
+<script src="search.js"></script>
+</body>
+</html>
