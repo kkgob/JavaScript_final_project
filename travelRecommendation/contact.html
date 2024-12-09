@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TravelBloom - Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, #1c1f1f, #2c3e50);
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.7em;
+            font-family: 'Georgia', serif;
+            color: #eee;
+            margin-right: 50px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #eee;
+            margin: 0 20px;
+            font-weight: 500;
+            font-size: 1em;
+        }
+
+        .nav-links a:hover {
+            color: #bcd0ce;
+        }
+
+        .nav-links {
+            flex: 1;
+        }
+
+        /* Hero Section */
+
+        .overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 600px;
+        }
+
+        .hero-content h1 {
+            font-size: 4em;
+            text-transform: uppercase;
+            margin: 0 0 20px 0;
+            font-weight: 700;
+        }
+
+        .contact-section {
+            position: relative;
+            padding: 100px 100px;
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin-top: -20vh; /* Pulls the form up into the hero section area */
+        }
+
+        .contact-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .contact-form button[type="submit"] {
+            background: #4cb5ae;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button[type="submit"]:hover {
+            background: #3a928a;
+        }
+
+        .social-icons {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px 0;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #4cb5ae;
+        }
+
+        @media(max-width: 768px) {
+            .hero-content h1 {
+                font-size: 3em;
+            }
+
+            .contact-section {
+                padding: 40px 20px;
+                margin-top: 0;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="logo">TravelBloom</div>
+    <div class="nav-links">
+        <a href="travel_recommendation.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" style="color: #4cb5ae;">Contact Us</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="social-icons">
+        <!-- Replace placeholders with actual icons or Font Awesome -->
+        <a href="#" title="Twitter">T</a>
+        <a href="#" title="Facebook">F</a>
+        <a href="#" title="Instagram">I</a>
+        <a href="#" title="LinkedIn">L</a>
+    </div>
+    <div class="hero-content">
+        <h1>Contact Us</h1>
+        <div class="contact-section">
+            <h2>Get in touch</h2>
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..." required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email..." required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>
