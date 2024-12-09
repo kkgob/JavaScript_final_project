@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TravelBloom - About Us</title>
+    <link rel="stylesheet" href="css/about.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, #1c1f1f, #2c3e50);
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.7em;
+            font-family: 'Georgia', serif;
+            color: #eee;
+            margin-right: 50px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #eee;
+            margin: 0 20px;
+            font-weight: 500;
+            font-size: 1em;
+        }
+
+        .nav-links a:hover {
+            color: #bcd0ce;
+        }
+
+        .nav-links {
+            flex: 1;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('images/background.jpg'); /* Replace with your own image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 100px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 600px;
+        }
+
+        .hero-content h1 {
+            font-size: 4em;
+            text-transform: uppercase;
+            margin: 0 0 20px 0;
+            font-weight: 700;
+        }
+
+        .hero-description {
+            font-size: 1.1em;
+            line-height: 1.5em;
+            color: #ccc;
+            background: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .social-icons {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px 0;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #4cb5ae;
+        }
+
+        /* About Section */
+        .about-section {
+            position: relative;
+            background: rgba(0,0,0,0.6);
+            padding: 60px 100px;
+            text-align: left;
+        }
+
+        .about-section h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .about-section p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            color: #eee;
+            max-width: 800px;
+        }
+
+        /* Team Section */
+        .team-section {
+            background: rgba(0,0,0,0.4);
+            padding: 40px 100px 80px;
+        }
+
+        .team-section h3 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .team-members {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            background: rgba(0,0,0,0.6);
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1 1 250px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .team-member h4 {
+            margin: 10px 0 5px;
+            font-size: 1.4em;
+        }
+
+        .team-member span {
+            display: block;
+            font-size: 1em;
+            color: #bcd0ce;
+            margin-bottom: 15px;
+        }
+
+        .team-member p {
+            font-size: 0.95em;
+            line-height: 1.4em;
+            color: #ddd;
+        }
+
+        @media(max-width: 768px) {
+            .hero-content h1 {
+                font-size: 3em;
+            }
+
+            .about-section, .team-section {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="logo">TravelBloom</div>
+    <div class="nav-links">
+        <a href="travel_recommendation.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+</nav>
+
+<!-- Hero with About Us title -->
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="social-icons">
+        <a href="#" title="Twitter">T</a>
+        <a href="#" title="Facebook">F</a>
+        <a href="#" title="Instagram">I</a>
+        <a href="#" title="LinkedIn">L</a>
+    </div>
+    <div class="hero-content">
+        <h1>About Us</h1>
+        <p class="hero-description">
+            Welcome to MiHoYo-TravelBloom!
+        </p>
+
+        <p class="hero-description">
+            MiHoYo is a global interactive entertainment company known for creating immersive games, including “Genshin Impact,” “Honkai Impact 3rd,” and “Tears of Themis.”
+        </p>
+
+        <p class="hero-description">
+           We focus on innovation and storytelling, combining cutting-edge technology with creative passion to deliver engaging experiences to players worldwide.
+            MiHoYo is dedicated to inspiring players through our “tech otakus save the world” philosophy.
+        </p>
+    </div>
+</section>
+
+<!-- Company Information Section -->
+<section class="about-section">
+    <p>
+        Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in putting our customers first
+        and working together to achieve our goals. Feel free to explore our website to learn more about what we offer.
+    </p>
+</section>
+
+<!-- Team Section -->
+<section class="team-section">
+    <h3>Our Team</h3>
+    <div class="team-members">
+        <div class="team-member">
+            <img src="images/zhongli.png" alt="zhongli" />
+            <h4>Morax</h4>
+            <span>Archon</span>
+            <p>A mysterious expert contracted by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things.</p>
+        </div>
+        <div class="team-member">
+            <img src="images/ganyu.png" alt="ganyu" />
+            <h4>Ganyu</h4>
+            <span>Secretary</span>
+            <p>The secretary at Yuehai Pavilion. The blood of the qilin, an illuminated beast, flows within her veins.</p>
+        </div>
+        <div class="team-member">
+            <img src="images/qiqi.png" alt="qiqi" />
+            <h4>Qiqi</h4>
+            <span>The character who will find you if you do not let me pass this assignment :(</span>
+            <p>An apprentice and herb gatherer at Bubu Pharmacy. An undead with a bone-white complexion, she seldom has much in the way of words or emotion.</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>

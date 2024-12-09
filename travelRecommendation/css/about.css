@@ -1,0 +1,7 @@
+.team-member img {
+    width: 100px;       /* Reduce the size */
+    height: auto;      /* Let the height adjust automatically */
+    border-radius: 10%;
+    margin-bottom: 10px;
+    border: 2px solid #fff;
+}
