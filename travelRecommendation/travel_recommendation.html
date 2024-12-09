@@ -2,10 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Travel Recommendations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TravelBloom</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, #1c1f1f, #2c3e50);
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.7em;
+            font-family: 'Georgia', serif;
+            color: #eee;
+            margin-right: 50px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #eee;
+            margin: 0 20px;
+            font-weight: 500;
+            font-size: 1em;
+        }
+
+        .nav-links a:hover {
+            color: #bcd0ce;
+        }
+
+        .nav-links {
+            flex: 1; /* pushes search container to the right */
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 50px;
+            padding: 5px 10px;
+        }
+
+        .search-container input[type="text"] {
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            padding: 8px 10px;
+            font-size: 14px;
+            color: #333;
+            width: 240px;
+        }
+
+        .search-container input::placeholder {
+            color: #999;
+        }
+
+        .search-container button {
+            border: none;
+            background: #4cb5ae;
+            color: #fff;
+            padding: 6px 12px;
+            margin-left: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .search-container button.clear-btn {
+            background: #2f4f4f; /* darker tone for Clear button */
+            margin-left: 5px;
+        }
+
+        .search-container button:hover {
+            opacity: 0.9;
+        }
+
+        .search-icon {
+            margin-right: 10px;
+            color: #333;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-<!-- Your content goes here -->
+<nav>
+    <div class="logo">TravelBloom</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <form class="search-container" action="search.html" method="get">
+        <span class="search-icon">🔍</span>
+        <input type="text" name="q" placeholder="Enter a destination or keyword" />
+        <button type="submit">Search</button>
+        <button type="reset" class="clear-btn">Clear</button>
+    </form>
+</nav>
 </body>
 </html>
