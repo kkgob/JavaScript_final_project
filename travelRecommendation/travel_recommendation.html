@@ -8,8 +8,10 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            color: #fff;
         }
 
+        /* Navigation Bar */
         nav {
             display: flex;
             align-items: center;
@@ -38,7 +40,7 @@
         }
 
         .nav-links {
-            flex: 1; /* pushes search container to the right */
+            flex: 1;
         }
 
         .search-container {
@@ -88,6 +90,90 @@
             color: #333;
             font-size: 16px;
         }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('images/background.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 100px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 500px;
+        }
+
+        .hero-content h1 {
+            font-size: 4em;
+            line-height: 1.2em;
+            text-transform: uppercase;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .hero-content h1 span {
+            display: block;
+        }
+
+        .hero-intro {
+            margin-top: 20px;
+            font-size: 1em;
+            line-height: 1.5em;
+            color: #ccc;
+        }
+
+        .hero-button {
+            display: inline-block;
+            margin-top: 30px;
+            background: #4cb5ae;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .hero-button:hover {
+            background: #3a928a;
+        }
+
+        /* Social Icons (Left Side) */
+        .social-icons {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px 0;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #4cb5ae;
+        }
     </style>
 </head>
 <body>
@@ -105,5 +191,34 @@
         <button type="reset" class="clear-btn">Clear</button>
     </form>
 </nav>
+
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="social-icons">
+        <!-- Replace placeholders with actual icons or Font Awesome icons -->
+        <a href="#" title="Twitter">T</a>
+        <a href="#" title="Facebook">F</a>
+        <a href="#" title="Instagram">I</a>
+        <a href="#" title="LinkedIn">L</a>
+    </div>
+    <div class="hero-content">
+        <h1>
+            <span>Explore</span>
+            <span>Liyue Harbor</span>
+        </h1>
+        <p class="hero-intro">
+            A bountiful harbor that lies in the east of Teyvat.
+            Mountains stand tall and proud alongside the stone forest,
+            that, together with the open plains and lively rivers,
+            make up Liyue's bountiful landscape,
+            which shows its unique beauty through each of the four seasons.
+        </p>
+
+        <p class="hero-intro">
+            Just how many gifts from the Geo God lie in wait amongst the rocks of Liyue's mountains?
+        </p>
+        <a href="booking.html" class="hero-button">Book Now</a>
+    </div>
+</section>
 </body>
 </html>
